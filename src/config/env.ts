@@ -18,4 +18,4 @@ const envSchema = z.object({
   EXPIRATION_HOURS: z.string().transform(Number).default('72'),
 });
 
-export const config = envSchema.parse(process.env);
+export const env = envSchema.parse(process.env);
